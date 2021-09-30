@@ -45,7 +45,7 @@ public class AnalisadorLexico {
 
 
     public void validar(List<String> tokens){
-     
+        System.out.println("ANALISE Lexico:");
         
         Stream<String> valido = tokens.stream().filter(e-> this.dicionario.contains(e));
 

@@ -1,0 +1,33 @@
+
+Analise Léxica :
+
+    É a primeira fase do processo de compilação, também é conhecida como leitura ou scanning.
+o objetivo nessa fase é identificar unidades léxicas ou lexemas que compõem o programa.
+O analisador léxico lê todos os caracteres do programa fonte e verifica se eles pertencem ao alfabeto da linguagem.
+Caso um caractere não pertença ao alfabeto da linguagem deve ser gerado um erro léxico.
+
+Analise Sintática:
+
+    A analise sintática tem como objeto validar a gramática do programa,
+nessa etapa o objetivo é reconhecer se a estrutura gramatical do código font
+e esta de acordo com as regras sintáticas da linguagem.
+
+Analise Semântica:
+
+    O objetivo dessa etapa é verificar se a semântica do programa fonte tem consistência.
+Para isso é utiliza a árvore sintática e as informações contidas na tabela de símbolos.
+
+Geração de código intermediário:
+
+    Nesse fase é gerado uma sequência de código denominada código intermediário,
+que posteriormente em outras fases irá gerar o código objeto.
+
+Otimização de Código:
+
+Nessa fase o objetivo é otimizar o código em termos de velocidade de execução e consumo de memória.
+
+
+Geração de código:
+
+    A geração de código objeto é a última etapa do processo de compilação e recebe como
+entrada uma representação intermediaria que mapeia a linguagem objeto.

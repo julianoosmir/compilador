@@ -12,7 +12,6 @@ public class AnalisadorSintatico {
     }
 
     public Boolean validar(){
-        System.out.println("-------------------------");
         System.out.println("ANALISE SINTÁTICA:");
         int numerolinha =0;
         Boolean erros = false;
