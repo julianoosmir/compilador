@@ -1,55 +1,11 @@
-Start = inicializar o programa
-Locate = inicilizar variaveis
-write = imprimir algo na tela
-Get = pegar dados digitados pelo usuario e atribuir em ima variavel
-if = bloco condicional
-Let = Variavel 
-EndIf = fim do bloco condicional
-Count = bloco em loop
-EndCount =  fim do bloco loop
-End = fim do programa
--------------------------------------------------------------------------------
 anotaçao EBNF
 <numeros> := 1|2|3|4|5|6|7|8|9|0
-<letras> := a|b|c|d|e|f|g|hijklm|n|o|p|q|r|s|t|u|v|w|x|y|z
-<operações> := + - * / > < 
+<letras> := a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z
+<operações> := + - * / > <
 <Start> := <letras><letras>
 <Locate> := <letras><letras>
 <Let> := <letras><letras>
 <Write> := <letras><letras>
 <Get> := <letras><letras>
-<if> := <letras><letras>
-<cout> := <letras><numeros><letras><numeros>
--------------------------------------------------------------------------------
-dicionario :
-1|2|3|4|5|6|7|8|9|0
-a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|+|-|*|/|>|<|(|)|=|
-Locate
-Start
-Write
-Get
-Let
-If
-"[A-z0-9:\s]{1,50}\"
-(?:(?=.*&)".*"|(?!.*&).*)
-“MyProgram”
-x+y
-(x > y)
-Count
-in
-from
-EndCount
-to
-EndIf
-End
--------------------------------------------------------------------------------
-Gramatica 
-^Start "[A-z0-9:\s]{1,50}\"
-^Locate [A-z0-9:\s]{1,50}
-^Write "[A-z0-9:\s]{1,50}\"
-^Get [A-z0-9:\s]{1,50}
-^if(?:(?=.*&)".*"|(?!.*&).*)
-^Count(?:(?=.*&)".*"|(?!.*&).*)
-EndCount
-EndIf
-End
+<If> := <letras><letras>
+<Cout> := <letras><numeros><letras><numeros>
