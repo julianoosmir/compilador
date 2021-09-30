@@ -1,0 +1,16 @@
+Start “MyProgram”
+Locate x
+Locate y
+Locate k
+Write “give me a number”
+Get x
+Write “gieve me another number”
+Get y
+Let k = x+y
+Write k
+If (x > y)
+ Count in k from y to x
+ Write k
+ EndCount
+EndIf
+End 
