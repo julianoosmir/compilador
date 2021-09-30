@@ -1,10 +1,10 @@
-Start “MyProgram”
+Start "MyProgram"
 Locate x
 Locate y
 Locate k
-Write “give me a number”
+Write "give me a number"
 Get x
-Write “gieve me another number”
+Write "gieve me another number"
 Get y
 Let k = x+y
 Write k

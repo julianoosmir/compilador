@@ -18,6 +18,6 @@ public class App {
         // analisadorLexico.validar(analisadorLexico.converterParaToken());
 
         AnalisadorSintatico analisadorSintatico = new AnalisadorSintatico(linhasGramatica, linhasDoExemplo);
-        analisadorLexico.codigoFonte.forEach(linha -> analisadorSintatico.validar(linha));
+        analisadorSintatico.validar();
     }
 }
